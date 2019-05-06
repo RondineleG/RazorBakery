@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using RazorBakery.Data;
 
 namespace RazorBakery
 {
@@ -31,7 +32,7 @@ namespace RazorBakery
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-
+            services.AddDbContext<RazorBakeryContext>();
             services.AddMvc()
                 .AddNewtonsoftJson();
         }

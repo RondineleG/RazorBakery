@@ -2,7 +2,7 @@ using RazorBakery.Models;
 using Microsoft.EntityFrameworkCore;
 namespace RazorBakery.Data
 {
-    public class RazorBakeryContext
+    public class RazorBakeryContext : DbContext
     {
        public DbSet<Produto> Produtos { get; set; }
         
