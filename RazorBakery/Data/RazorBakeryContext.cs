@@ -11,5 +11,5 @@ namespace RazorBakery.Data
             optionsBuilder.UseSqlite(@"Data source=RazorBakery.db");
         }
     } 
-    }
+    
 }
